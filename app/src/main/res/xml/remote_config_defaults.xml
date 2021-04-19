@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaultsMap>
+
+    <entry>
+        <key>signature_click_enabled</key>
+        <value>false</value>
+    </entry>
+
+    <entry>
+        <key>signature_url</key>
+        <value>http://WWW.DOMAIN.EXT/</value>
+    </entry>
+
+    <entry>
+        <key>signature_text</key>
+        <value> </value>
+    </entry>
+
+
+    <entry>
+        <key>signature_click_span_start</key>
+        <value>0</value>
+    </entry>
+
+    <entry>
+        <key>signature_click_span_stop</key>
+        <value>0</value>
+    </entry>
+
+
+    <entry>
+        <key>latest_version</key>
+        <value>0.9</value>
+    </entry>
+
+    <entry>
+        <key>update_url</key>
+        <value>https://play.google.com/</value>
+    </entry>
+
+
+    <entry>
+        <key>update_desc</key>
+        <value>Please update the app to continue</value>
+    </entry>
+
+    <entry>
+        <key>update_title</key>
+        <value>Update required</value>
+    </entry>
+
+
+    <entry>
+        <key>app_update_required</key>
+        <value>false</value>
+    </entry>
+
+
+
+    <entry>
+        <key>disable_description</key>
+        <value>App is temporarily disabled</value>
+    </entry>
+
+    <entry>
+        <key>disabled_title</key>
+        <value>App disabled</value>
+    </entry>
+
+
+    <entry>
+        <key>app_disabled</key>
+        <value>false</value>
+    </entry>
+
+
+
+
+</defaultsMap>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?android:attr/colorForegroundInverse"
+    tools:context="com.ashwinkanchana.cansis.activities.ProfileActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            app:title=""
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:elevation="0dp"
+            android:background="?android:attr/colorForegroundInverse">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nav_profile"
+                android:textSize="30sp"
+                android:textColor="?android:attr/textColorPrimary"
+                android:layout_gravity="center"
+                android:fontFamily="@font/sans_medium"
+                />
+
+        </com.google.android.material.appbar.MaterialToolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+
+
+   <FrameLayout
+       android:id="@+id/profile_container"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+
+
+   </FrameLayout>
+
+
+
+
+
+
+</LinearLayout>

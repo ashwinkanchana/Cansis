@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.franmontiel:AttributionPresenter:1.0.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/16df83c4089243c438cbfb96e00c34e5/jetified-AttributionPresenter-1.0.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/16df83c4089243c438cbfb96e00c34e5/jetified-AttributionPresenter-1.0.1/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.franmontiel/AttributionPresenter/1.0.1/2d43c4d2b8cf3e3a5a489bca9a9db2e817f30cee/AttributionPresenter-1.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navNews"
+        android:icon="@drawable/news"
+        android:title="@string/nav_news" />
+    <item
+        android:id="@+id/navAttendance"
+        android:icon="@drawable/attendance"
+        android:title="@string/nav_attendance" />
+    <item
+        android:id="@+id/navMarks"
+        android:icon="@drawable/marks"
+        android:title="@string/nav_marks" />
+    <item
+        android:id="@+id/navGallery"
+        android:icon="@drawable/gallery"
+        android:title="@string/nav_gallery"
+        />
+
+    <item
+        android:id="@+id/navProfile"
+        android:icon="@drawable/ic_profile"
+        android:title="@string/nav_profile"
+        />
+
+</menu>

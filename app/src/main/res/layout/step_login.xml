@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/userChipGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:chipSpacingVertical="8dp"
+        app:selectionRequired="true"
+        app:singleSelection="true"
+        app:singleLine="false">
+
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/studentLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checkable="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="Student"
+            android:textAlignment="viewStart"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit ="marquee_forever"
+            app:chipMinHeight="48dp"
+            app:textStartPadding="18dp"
+            app:textEndPadding="18dp"
+            app:chipCornerRadius="32dp"
+            app:chipStrokeColor="@color/colorBlue"
+            app:rippleColor="@color/colorBlue_translucent"
+            android:textColor="@color/chip_text_color"
+            app:chipBackgroundColor="@color/chip_fill_color"
+            app:chipSurfaceColor="@color/transparent"
+            app:chipStrokeWidth="1dp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/parentLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checkable="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="Parent"
+            android:textAlignment="viewStart"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit ="marquee_forever"
+            app:chipMinHeight="48dp"
+            app:textStartPadding="18dp"
+            app:textEndPadding="18dp"
+            app:chipCornerRadius="32dp"
+            app:chipStrokeColor="@color/colorBlue"
+            app:rippleColor="@color/colorBlue_translucent"
+            android:textColor="@color/chip_text_color"
+            app:chipBackgroundColor="@color/chip_fill_color"
+            app:chipSurfaceColor="@color/transparent"
+            app:chipStrokeWidth="1dp" />
+
+
+
+
+
+    </com.google.android.material.chip.ChipGroup>
+
+
+
+    <TextView
+        android:id="@+id/user_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:fontFamily="@font/sans_medium"
+        android:textColor="@color/colorGrey"
+        android:text="@string/select_user_type"
+        android:textSize="16sp"/>
+
+
+
+
+
+
+
+</LinearLayout>

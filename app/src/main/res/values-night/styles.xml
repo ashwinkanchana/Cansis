@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+
+    <style name="DarkTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#3d5aff</item>
+        <item name="colorPrimaryDark">#0031cb</item>
+        <item name="colorAccent">#1DE9B6</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:statusBarColor">#000000</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:navigationBarColor">#000000</item>
+
+        <item name="noticeTextColor">@color/colorWhite</item>
+
+
+    </style>
+
+
+
+    <style name="AppTheme.NoActionBar.night">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="SplashTheme.night" parent="AppTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar" tools:targetApi="honeycomb">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@drawable/splash</item>
+    </style>
+
+
+    <style name="ToolbarTheme.night" parent="ThemeOverlay.MaterialComponents.ActionBar">
+        <item name="android:fontFamily">@font/sans_medium</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+
+    <style name="NavigationText.night" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/sans_medium</item>
+    </style>
+
+
+    <style name="BottomNavigationViewText.night" parent="@style/Widget.MaterialComponents.BottomNavigationView">
+        <item name="fontFamily">@font/sans_bold</item>
+    </style>
+
+
+
+    <style name="chipTextAppearance.night" parent="TextAppearance.MaterialComponents.Chip">
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/sans</item>
+        <item name="android:textColor">@color/chip_text_color</item>
+
+    </style>
+    
+
+
+    <style name="fab_text.night" parent="Widget.MaterialComponents.ExtendedFloatingActionButton">
+        <item name="android:textSize">22sp</item>
+        <item name="android:fontFamily">@font/sans_medium</item>
+
+    </style>
+
+
+</resources>

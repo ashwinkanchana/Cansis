@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/otp_activity_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:focusable="true"
+    android:clickable="true"
+    tools:context=".activities.OtpActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:elevation="0dp"
+            android:background="?android:attr/windowBackground">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login via OTP"
+                android:textSize="24sp"
+                android:textColor="?android:attr/textColorPrimary"
+                android:layout_gravity="center"
+                android:fontFamily="@font/sans_medium"
+                />
+
+        </com.google.android.material.appbar.MaterialToolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ernestoyaquello.com.verticalstepperform.VerticalStepperFormView
+        android:id="@+id/stepper_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/app_bar"
+        android:layout_marginTop="32dp"
+        app:form_last_button_text="Login"
+        app:form_allow_step_opening_on_header_click="false"
+        app:form_circle_background_color="@color/stepperColorBlue"
+        app:form_next_button_background_color="@color/stepperColorBlue"
+        app:form_next_button_pressed_background_color="@color/colorPrimaryDark"
+        app:form_display_cancel_button_in_last_step="false"
+        app:form_cancel_button_background_color="@android:color/transparent"
+        app:form_cancel_button_pressed_background_color="@android:color/transparent"
+        app:form_cancel_button_text_color="@color/colorPrimary"
+        app:form_cancel_button_pressed_text_color="@color/colorPrimaryDark"
+        app:form_allow_non_linear_navigation="false"
+        app:form_display_bottom_navigation="false"
+        app:form_error_message_text_color="@color/colorRed"
+        app:form_subtitle_text_color="@android:color/secondary_text_light"
+        app:form_include_confirmation_step="false"/>
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/loading_animation"
+        android:layout_width="196dp"
+        android:layout_height="196dp"
+        android:layout_margin="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        app:lottie_fileName="waves.json"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_speed="1"
+        android:visibility="visible"/>
+
+</RelativeLayout>

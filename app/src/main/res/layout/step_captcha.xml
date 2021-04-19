@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <TextView
+        android:id="@+id/error_text_captcha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="8dp"
+        android:fontFamily="@font/sans_medium"
+        android:textSize="14sp"/>
+
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/captcha_chip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/error_text_captcha"
+        android:layout_marginTop="8dp"
+        android:checkable="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="Show captcha"
+        android:fontFamily="@font/sans_bold"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:checked="false"
+        app:chipBackgroundColor="@color/stepperColorBlue" />
+
+    <LinearLayout
+        android:id="@+id/progress_otp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="12dp"
+        android:layout_below="@id/captcha_chip">
+
+        <ProgressBar
+            style="@style/Widget.AppCompat.ProgressBar"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:indeterminate="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:fontFamily="@font/sans_medium"
+            android:textColor="@color/colorGrey"
+            android:text="Generating OTP" />
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,186 @@
+<resources>
+    <string name="app_name">Cansis</string>
+    <string name="app">Cansis (Unofficial)</string>
+    <string name="feedback_option">Write a review</string>
+    <string name="website">Visit College Website</string>
+    <string name="license">Open Source Licenses</string>
+    <string name="dark_mode">Dark Mode</string>
+
+
+    <string name="choose_sem">Choose semester</string>
+    <string name="sem1">1st Semester</string>
+    <string name="sem2">2nd Semester</string>
+    <string name="sem3">3rd Semester</string>
+    <string name="sem4">4th Semester</string>
+    <string name="sem5">5th Semester</string>
+    <string name="sem6">6th Semester</string>
+    <string name="sem7">7th Semester</string>
+    <string name="sem8">8th Semester</string>
+
+    <string name="roman_1">I</string>
+    <string name="roman_2">II</string>
+    <string name="roman_3">III</string>
+    <string name="roman_4">IV</string>
+    <string name="roman_5">V</string>
+    <string name="roman_6">VI</string>
+    <string name="roman_7">VII</string>
+    <string name="roman_8">VIII</string>
+
+    <string name="none">-</string>
+
+
+    <string name="user_textview">Choose user type</string>
+    <string name="select_user_type">Select user type</string>
+    <string name="parent_button_text">Parent</string>
+    <string name="student_button_text">Student</string>
+    <string name="faculty_button_text">Faculty</string>
+
+
+    <string name="student_textview">Student\'s Corner</string>
+    <string name="parent_textview">Parent\'s Corner</string>
+
+    <string name="phone">Phone</string>
+    <string name="password">Password</string>
+
+
+    <string name="unkown_error">Something went wrong</string>
+    <string name="retry">Retry</string>
+
+
+    <string name="nothing_here">There\'s Nothing here</string>
+    <string name="server_offline">Server Error</string>
+    <string name="server_offline_desc">Don\'t worry its not you, its us</string>
+    <string name="server_offline_message">Server at Benjanapadavu is not responding at the moment \nPlease try again later</string>
+    <string name="something_went_wrg">Something went wrong</string>
+
+
+    <string name="somethin_went_wrg_try_again">Something went wrong, Try again after some time</string>
+    <string name="limit_exceeded">Limit exceeded, try again tomorrow</string>
+
+
+    <string name="login">Login</string>
+    <string name="sign_up">Sign up</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="forgot_password_heading">Forgot Password</string>
+    <string name="enter_email">Enter Phone and email registered with College</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm">Confirm</string>
+    <string name="password_email_success">Password will be sent to you</string>
+    <string name="password_email_fail">Couldn\'t process your request,try again later</string>
+    <string name="unknown_error_snackbar">Something went wrong!</string>
+    <string name="try_again_snackbar">Please try again</string>
+    <string name="email_mismatch_snackbar">Email didn\'t match with our records!</string>
+    <string name="no_connection_snackbar">You\'re offline </string>
+    <string name="online_snackbar">You\'re online</string>
+    <string name="sign_up_success">Account created successfully</string>
+    <string name="account_exists">Account already exists!</string>
+    <string name="details_not_found">No match found in admission records</string>
+
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+
+    <string name="student_email">Student\'s email</string>
+    <string name="student_phone">Student\'s phone</string>
+
+    <string name="employee_id">Employee ID</string>
+
+    <string name="sign_up_welcome_textview">Hi There!</string>
+    <string name="sign_up_student">Student Registration</string>
+    <string name="sign_up_parent">Parent Registration</string>
+
+
+    <string name="error_empty_field">Field can\'t be left empty</string>
+    <string name="error_invalid_email">Enter a valid Email address</string>
+    <string name="error_invalid_phone">Enter a valid Phone number</string>
+    <string name="error_short_name">Enter full name</string>
+    <string name="error_short_password">Password must contain at least 4 characters</string>
+
+
+    <string name="nav_news">Circulars</string>
+    <string name="nav_attendance">Attendance</string>
+    <string name="nav_marks">Marks</string>
+    <string name="nav_gallery">Photos</string>
+    <string name="nav_profile">Profile</string>
+
+
+    <string name="home_drawer">Home</string>
+    <string name="profile_drawer">Profile</string>
+    <string name="logout_drawer">logout</string>
+
+
+    <string name="more">More</string>
+    <string name="less">Less</string>
+    <string name="phone_profile">Phone</string>
+    <string name="parent">Parent</string>
+    <string name="address">Address</string>
+
+
+    <string name="max_marks">Maximum Marks - </string>
+
+    <string name="logout_dialog_title">Logout</string>
+    <string name="logout_dialog_description">Are you sure?</string>
+    <string name="logout_negative_button">No</string>
+    <string name="logout_positive_button">Yes</string>
+
+    <string name="refresh_dialog_title">Refresh</string>
+    <string name="refresh_dialog_description">This may take a while</string>
+    <string name="refresh_negative_button">Cancel</string>
+    <string name="refresh_positive_button">Continue</string>
+
+
+    <string name="attd_retry">Tap to retry</string>
+
+
+    <string name="refresh_profile">Refresh Profile</string>
+    <string name="about">About</string>
+
+
+    <string name="logout">LOGOUT</string>
+    <string name="notice_channel_name">Announcements</string>
+    <string name="notice_channel_description">Provides Push notification if any announcement is made.</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="default_notification_channel_id">announcements</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+    <string name="restart_app">Restarting app…</string>
+    <string name="v">V </string>
+    <string name="source_licenses">Open source licenses</string>
+    <string name="close">Close</string>
+
+    <string name="signature">App developed by Ashwin kanchana</string>
+    <string name="copyright">© 2020 CEC &amp; Canara High School Association \n Mangalore • All Rights Reserved</string>
+
+    <string name="please_wait">Please wait…</string>
+    <string name="captcha_welcome">"Forgot Password? We\'ve got you covered\nBut first, prove you are a human"</string>
+
+
+    <string name="form_discard_question">Discard Login?</string>
+    <string name="form_info_will_be_lost">Your progress will be lost</string>
+    <string name="form_discard_cancel">Cancel</string>
+    <string name="form_discard">Discard</string>
+
+
+    <string name="feedback_title">Rate this app</string>
+    <string name="feedback_message">Tell us what you think</string>
+    <string name="feedback_anonymous">Your response will be anonymous</string>
+    <string name="feedback">Review</string>
+    <string name="say_something">Say something</string>
+
+    <string name="feedback_send">Submit</string>
+
+    <string name="dismiss">Dismiss</string>
+
+    <string name="battery_optimization">Trouble receiving notifications on time?</string>
+
+
+    <string name="notification_dialog_title">Circulars Notification</string>
+    <string name="notification_dialog_message">If you’re not receiving notifications when college posts a new circular, give these steps a try</string>
+    <string name="notification_dialog_description">•Make sure that Cansis is exempt from your device’s battery optimization features\n\n•Check that Cansis is given permission to autostart</string>
+    <string name="battery_optimization_intent_button">Go to battery optimization settings</string>
+    <string name="battery_optimization_toast">Find Cansis and make sure it’s set to Don’t optimize</string>
+    <string name="battery_optimization_info">Settings might differ based on device manufacturer</string>
+</resources>

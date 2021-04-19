@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:Context=".ParentActivity">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.MaterialComponents"
+            app:elevation="0dp">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:elevation="0dp"
+                android:background="@color/toolbar_color"
+                app:layout_scrollFlags="enterAlways|snap"
+                app:titleTextAppearance="@style/ToolbarTheme"
+                app:titleTextColor="@color/toolbarText"
+                android:theme="@style/ThemeOverlay.MaterialComponents"
+                app:popupTheme="@style/ThemeOverlay.MaterialComponents">
+
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:contentDescription="?android:attr/logo"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="12dp"
+                    android:src="@drawable/cec_logo_transparent_small"/>
+
+
+            </com.google.android.material.appbar.MaterialToolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <com.ashwinkanchana.cansis.utils.CustomViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="56dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_below="@id/view_pager"
+            app:elevation="0dp"
+            android:background="?android:attr/colorForegroundInverse"
+            app:itemIconTint="@color/nav_item_color"
+            app:itemTextColor="@color/nav_item_color"
+            app:labelVisibilityMode="labeled"
+            app:itemTextAppearanceInactive="@style/BottomNavigationViewText"
+            app:itemTextAppearanceActive="@style/BottomNavigationViewText"
+            app:itemRippleColor="@color/colorBlue_translucent2"
+            app:menu="@menu/btm_nav_parent" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:background="@color/splash_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:itemIconTint="@color/nav_item_color"
+        app:itemTextColor="@color/nav_item_color"
+        app:itemShapeFillColor="@color/drawer_nav_item_background"
+        android:fitsSystemWindows="true"
+       app:itemBackground="@color/drawer_nav_item_background"
+        android:overScrollMode="never"
+        app:menu="@menu/drawer_menu_parent">
+
+
+    </com.google.android.material.navigation.NavigationView>
+
+
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

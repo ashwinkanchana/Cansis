@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.core.widget.ContentLoadingProgressBar
+        android:id="@+id/otp_progress"
+        android:layout_centerInParent="true"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="4dp"
+        android:layout_height="4dp"/>
+
+    <RelativeLayout
+        android:id="@+id/otp_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/otp_instruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sans"
+        android:textColor="@color/colorGrey"
+        android:text="Please enter the verification code sent to"
+        android:textSize="16sp"/>
+    <TextView
+        android:id="@+id/email_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/otp_instruction"
+        android:fontFamily="@font/sans_bold"
+        android:textColor="@color/colorGrey"
+        android:textSize="14sp"/>
+
+
+    <TextView
+        android:id="@+id/error_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email_text"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/sans_medium"
+        android:textColor="@color/colorRed"
+        android:textSize="16sp"/>
+
+    <com.mukesh.OtpView
+        android:id="@+id/otp_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email_text"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="16dp"
+        app:itemWidth="40dp"
+        android:inputType="number"
+        android:itemBackground="@drawable/bg_otp_item"
+        app:hideLineWhenFilled="true"
+        app:state_filled="false"
+        android:textColor="@color/disabled_text"
+        app:itemCount="6"
+        app:itemSpacing="4dp"
+        app:lineColor="@color/otp_item_state"
+        app:viewType="line" >
+    </com.mukesh.OtpView>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

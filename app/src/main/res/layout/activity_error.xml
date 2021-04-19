@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?android:attr/colorForegroundInverse"
+    tools:context=".activities.ErrorActivity">
+
+
+    <TextView
+        android:id="@+id/error_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="12dp"
+        android:gravity="start"
+        android:fontFamily="@font/sans_bold"
+        android:textColor="?android:attr/textColorPrimary"
+        android:layout_gravity="start"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/error_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_below="@id/error_title"
+        android:fontFamily="@font/sans"
+        android:textColor="?android:attr/textColorPrimary"
+        android:layout_gravity="start"
+        android:linksClickable="true"
+        android:autoLink="web"
+        android:textSize="18sp" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sans_bold"
+        android:textAllCaps="false"
+        android:layout_gravity="bottom|end"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp"
+        android:textColor="#00897B"
+        android:textSize="15sp"
+        android:visibility="gone"
+        app:backgroundTint="?android:attr/windowBackground"
+        app:cornerRadius="4dp"
+        app:rippleColor="#4D00897B"
+        app:strokeColor="@color/colorGrey2"
+        android:text="Exit"
+        app:strokeWidth="1dp" />
+
+
+</RelativeLayout>

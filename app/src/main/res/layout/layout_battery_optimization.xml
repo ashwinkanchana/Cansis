@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/sans_bold"
+        android:textColor="@color/darkText"
+        android:drawableStart="@drawable/ic_notification_bell"
+        android:drawablePadding="8dp"
+        android:text="@string/notification_dialog_title"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/sans"
+        android:textColor="@color/noticeTextColor"
+        android:text="@string/notification_dialog_message"
+        android:textSize="16sp"/>
+
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/message"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/sans_medium"
+        android:textColor="@color/noticeTextColor"
+        android:text="@string/notification_dialog_description"
+        android:textSize="16sp"/>
+
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:id="@+id/settings_intent_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@id/desc"
+        android:text="@string/battery_optimization_intent_button"
+        android:textAllCaps="false"
+        android:fontFamily="@font/sans_bold"
+        android:textColor="#00897B"
+        android:textSize="15sp"
+        app:backgroundTint="?android:attr/windowBackground"
+        app:cornerRadius="4dp"
+        app:rippleColor="#2A00897B"
+        app:strokeColor="@color/colorGrey2"
+        app:strokeWidth="1dp" />
+
+
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/settings_intent_button"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/sans_medium"
+        android:textColor="@color/noticeTextColor"
+        android:drawableStart="@drawable/ic_info"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:text="@string/battery_optimization_info"
+        android:textSize="12sp"/>
+
+
+</RelativeLayout>

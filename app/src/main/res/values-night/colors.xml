@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5770FF</color>
+    <color name="colorPrimaryDark"> #0031cb</color>
+    <color name="colorAccent">#2196F3</color>
+    <color name="placeholder_bg">#7A7A7A</color>
+
+
+    <color name="colorBlue">#5987D8</color>
+    <color name="notice_header">#34303030</color>
+    <color name="toolbar_color">#000000</color>
+    <color name="toolbarText">#ffffff</color>
+
+    <color name="splash_bg">#0B0B0B</color>
+
+
+    <color name="colorBlue_translucent">#291A73E9</color>
+    <color name="colorBlue_translucent2">#0C1A73E9</color>
+    <color name="disabled_text">#666666</color>
+
+    <color name="darkText">#FFFFFF</color>
+
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorGrey">#565656</color>
+    <color name="colorGrey2">#34303030</color>
+    <color name="colorGrey3">#303030</color>
+    <color name="colorRed">#f44336</color>
+    <color name="colorGreyStroke">#34636363</color>
+
+    <color name="nav_item_deselected">#5f6267</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="indigo">#5c6bc0</color>
+
+
+    <color name="noticeTextColor">#FFFFFF</color>
+    <color name="noticeDateText">#487EDD</color>
+    <color name="noticeHeaderText">#FFFFFF</color>
+
+    <color name="navBarItemColor">#919191</color>
+
+</resources>

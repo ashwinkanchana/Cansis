@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/sans_bold"
+        android:textColor="@color/darkText"
+        android:drawableStart="@drawable/ic_server"
+        android:drawablePadding="8dp"
+        android:text="@string/server_offline"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/sans_medium"
+        android:textColor="@color/noticeTextColor"
+        android:layout_marginStart="32dp"
+        android:text="@string/server_offline_desc"
+        android:textSize="16sp"/>
+
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/message"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/sans_medium"
+        android:textColor="@color/noticeTextColor"
+        android:layout_marginStart="32dp"
+        android:text="@string/server_offline_message"
+        android:textSize="16sp"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/server_anim"
+        android:layout_width="108dp"
+        android:layout_height="108dp"
+        android:layout_marginTop="12dp"
+        app:lottie_fileName="server_offline.json"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:layout_below="@id/desc"
+        android:layout_centerHorizontal="true"
+        app:lottie_speed="1"
+        android:visibility="visible"/>
+
+
+
+
+</RelativeLayout>

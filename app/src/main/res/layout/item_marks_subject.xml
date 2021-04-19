@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginBottom="8dp"
+    android:clickable="false"
+    android:focusable="false"
+    android:elevation="0dp"
+    app:cardElevation="0dp"
+    style="@style/Widget.MaterialComponents.CardView"
+    app:cardBackgroundColor="?android:attr/colorForegroundInverse"
+    app:strokeColor="@color/colorGreyStroke"
+    app:strokeWidth="1dp"
+    app:cardCornerRadius="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp">
+
+
+        <RelativeLayout
+            android:id="@+id/marks_thumbnail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/round">
+
+
+            <TextView
+                android:id="@+id/s_m_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/colorWhite"
+                android:fontFamily="@font/sans"
+                android:textSize="24sp" />
+        </RelativeLayout>
+
+    <TextView
+        android:id="@+id/s_m_sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/marks_thumbnail"
+        android:fontFamily="@font/sans"
+        android:textColor="?android:attr/textColorPrimary"
+        android:textSize="16sp"
+        android:layout_centerVertical="true"
+        android:singleLine="false"
+        android:ellipsize="none"
+        />
+
+    </RelativeLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight">
+        <item name="colorPrimary">#3d5aff</item>
+        <item name="colorPrimaryDark">#0031cb</item>
+        <item name="colorAccent">#12B8A8</item>
+        <item name="windowActionBar">false</item>
+
+        <item name="noticeTextColor">@color/noticeTextColor</item>
+        <item name="android:navigationBarColor">@color/toolbar_color</item>
+    </style>
+
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="SplashTheme" parent="Theme.MaterialComponents.DayNight">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar" tools:targetApi="honeycomb">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@drawable/splash</item>
+        <item name="android:navigationBarColor">@color/splash_bg</item>
+    </style>
+
+
+    <style name="ToolbarTheme" parent="ThemeOverlay.MaterialComponents.ActionBar">
+        <item name="android:fontFamily">@font/sans_bold</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+
+    <style name="NavigationText" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/sans_medium</item>
+    </style>
+
+
+    <style name="BottomNavigationViewText" parent="@style/Widget.MaterialComponents.BottomNavigationView">
+        <item name="fontFamily">@font/sans_bold</item>
+    </style>
+
+
+
+    <style name="chipTextAppearance" parent="TextAppearance.MaterialComponents.Chip">
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/sans</item>
+        <item name="android:textColor">@color/chip_text_color</item>
+
+    </style>
+    
+
+
+    <style name="fab_text" parent="Widget.MaterialComponents.ExtendedFloatingActionButton">
+        <item name="android:textSize">19sp</item>
+        <item name="android:fontFamily">@font/sans</item>
+
+    </style>
+
+
+    <style name="DialogFullscreenWithTitle" parent="Theme.MaterialComponents.DayNight.DialogWhenLarge">
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+    </style>
+
+
+    <style name="MaterialButtonStyle" parent="Widget.MaterialComponents.Button.UnelevatedButton">
+        <item name="backgroundTint">@color/signup_btn</item>
+    </style>
+
+    <style name="AppTheme.otp" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">#3d5aff</item>
+        <item name="colorPrimaryDark">#0031cb</item>
+        <item name="colorAccent">#12B8A8</item>
+        <item name="windowActionBar">false</item>
+
+
+        <item name="otpViewStyle">@style/OtpWidget.OtpView</item>
+    </style>
+
+
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/starcolor_intermediate</item>
+        <item name="colorControlActivated">@color/starcolor</item>
+        <item name="colorControlHighlight">@color/starcolor</item>
+        <item name="trackColorInactive">@color/starcolor_intermediate</item>
+    </style>
+
+</resources>

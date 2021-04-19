@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/colorForegroundInverse"
+    tools:noticeContext=".LoginActivity"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <TextView
+        android:id="@+id/loginTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/sans"
+        android:textColor="?android:attr/textColorPrimary"
+        android:text="@string/student_textview"
+        android:textSize="24sp" />
+
+
+
+
+
+    <com.google.android.material.button.MaterialButtonToggleGroup
+
+        android:id="@+id/toggle_button_group"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginTextView"
+        android:layout_marginTop="24dp"
+        app:singleSelection="true"
+        app:checkedButton="@id/studentButton"
+        >
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/studentButton"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="122dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/student_button_text"
+            android:textSize="14sp"
+            android:fontFamily="@font/sans_bold"
+            android:textAllCaps="false"
+            app:backgroundTint="@color/button_group_color"
+            android:textColor="@color/button_group_text"
+            app:strokeColor="@color/button_group_stroke"
+            app:rippleColor="@color/colorBlue"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/parentButton"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="122dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/parent_button_text"
+            android:textSize="14sp"
+            android:fontFamily="@font/sans_bold"
+            android:textAllCaps="false"
+            app:backgroundTint="@color/button_group_color"
+            android:textColor="@color/button_group_text"
+            app:strokeColor="@color/button_group_stroke"
+            app:rippleColor="@color/colorBlue"
+            />
+
+
+
+
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="24dp"
+        app:boxStrokeColor="@color/colorPrimary"
+        app:hintTextColor="@color/colorPrimary"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/username_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/phone"
+            android:inputType="phone" />
+
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        app:boxStrokeColor="@color/colorPrimary"
+        app:hintTextColor="@color/colorPrimary"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:errorEnabled="true"
+        app:passwordToggleEnabled="true">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:id="@+id/password_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_mono"
+            android:hint="@string/password"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/shape_default"
+        android:backgroundTint="@color/colorPrimary"
+        android:elevation="4dp"
+        android:text="@string/login"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:fontFamily="@font/sans_bold"
+        android:textColor="@color/colorWhite"
+        app:spinning_bar_color="#FFF"
+        app:spinning_bar_padding="6dp"
+        app:spinning_bar_width="4dp" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/sign_up_button"
+        style="@style/MaterialButtonStyle"
+        android:textColor="@color/signup_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:textAllCaps="false"
+        android:fontFamily="@font/sans_medium"
+        android:visibility="visible"
+
+        android:textSize="16sp"
+        app:backgroundTint="@color/transparent"
+        app:cornerRadius="4dp"
+        app:strokeColor="@color/colorGrey2"
+        app:strokeWidth="1dp"
+        app:rippleColor="@color/colorBlue_translucent"
+        />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forgot_password"
+            android:layout_gravity="center_horizontal"
+            android:textAllCaps="false"
+            android:fontFamily="@font/sans_medium"
+            android:visibility="visible"
+            style="@style/MaterialButtonStyle"
+            android:textColor="@color/signup_btn"
+            android:textSize="16sp"
+            app:backgroundTint="@color/transparent"
+            app:cornerRadius="4dp"
+            app:rippleColor="@color/colorBlue_translucent"
+           />
+
+
+
+
+
+</LinearLayout>
