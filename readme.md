@@ -58,8 +58,3 @@ Cansis requires Android 5+ to run
 
 ##### Web Scraping
  - `Marks` and `Attendace` can be fetched via API but it returns details of all previous semesters which almost took a minute on average, but the same data is available on college's website for a particular semester, which has better response time, so used web scraping (on device) to get these data from website
- 
-
-<img height="200" src="https://i.postimg.cc/rwqdkYnH/yoda.jpg">
-
-Overengineered? sure, but learned a lot through this project.
