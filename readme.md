@@ -50,7 +50,7 @@ Cansis requires Android 5+ to run
 - Every 5 minutes a python script runs on [AWS Lambda](https://aws.amazon.com/lambda/) which hits college's `Announcements` Endpoint, compares current JSON with the previous one which is stored in [DynamoDB](https://aws.amazon.com/dynamodb/), if there is an new update Lambda calls [Firebase Cloud Messaging](https://firebase.google.com/docs/cloud-messaging) to send push notifcation to clients
 
 ##### OTP
- - After reCAPTCHA verification, OTP is generated on device (i know, bad choice 	&#x1F605;), its stored in Firestore and mailed to verifed email in a HTML template through Twilio's [Sendgrid](https://sendgrid.com/), then input is compared with Firestore and validated
+ - After reCAPTCHA verification, OTP is generated, its stored in Firestore and mailed to verifed email in a HTML template through Twilio's [Sendgrid](https://sendgrid.com/), then input is compared with Firestore and validated
  
 
 ##### Force Update/Discontinue
